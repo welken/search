@@ -54,6 +54,8 @@ static NSString * const CityCellReuseID = @"CityCellReuseID";
     
     NSArray *cityListArr = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"CityList.plist" ofType:nil]];
     
+    NSLog(@"%@",cityListArr);
+    
     NSMutableArray *nameArr = [[NSMutableArray alloc] initWithCapacity:cityListArr.count];
     for (NSDictionary *dict in cityListArr) {
         [nameArr addObject:dict[@"associationName"]];
