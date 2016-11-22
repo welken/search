@@ -204,6 +204,7 @@ static NSString * const CityCellReuseID = @"CityCellReuseID";
     [self.tableView reloadData];
 }
 
+
 - (NSMutableArray *)dataSource{
     if (!_dataSource) {
         _dataSource = [NSMutableArray array];
@@ -238,6 +239,7 @@ static NSString * const CityCellReuseID = @"CityCellReuseID";
         _searchController.dimsBackgroundDuringPresentation = NO;
         
         _searchController.searchBar.placeholder=@"搜索";
+        _searchController.searchBar.tintColor = [UIColor whiteColor];
         
         _searchController.definesPresentationContext = YES;
         
